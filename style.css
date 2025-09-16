@@ -1,0 +1,106 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  margin-top: 10%;
+}
+
+/* Buttons */
+.button-group button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-group button:first-child {
+  background: #007bff;
+  color: white;
+}
+
+.button-group button:last-child {
+  background: #28a745;
+  color: white;
+}
+
+.button-group button:hover {
+  opacity: 0.8;
+}
+
+/* Card design */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5% auto;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+button.admin-btn {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+/* Home Button */
+.home-btn {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  background: #444;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+}

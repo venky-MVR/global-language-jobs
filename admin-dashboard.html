@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Admin Dashboard</h1>
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+
+  <button class="blue">Share Signup</button>
+  <button class="green">Export Excel</button>
+
+  <div class="card">
+    <h3>Total Employees</h3>
+    <p id="empCount">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Open Jobs</h3>
+    <p id="jobCount">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Find Employees</h3>
+    <input type="text" placeholder="Search by name..."><br><br>
+    <input type="text" placeholder="Search by language...">
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

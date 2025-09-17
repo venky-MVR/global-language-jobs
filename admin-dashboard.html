@@ -2,34 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="top-bar">
-    <h1>Admin Dashboard</h1>
-    <button class="logout" onclick="logout()">Logout</button>
+  <div class="dashboard">
+    <h2>Admin Dashboard</h2>
+    <p>Manage employee profiles and job openings</p>
+    <button onclick="logout()">Logout</button>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Employees</h3>
+        <p>0</p>
+      </div>
+      <div class="card">
+        <h3>Open Jobs</h3>
+        <p>0</p>
+      </div>
+    </div>
   </div>
-
-  <button class="blue">Share Signup</button>
-  <button class="green">Export Excel</button>
-
-  <div class="card">
-    <h3>Total Employees</h3>
-    <p id="empCount">0</p>
-  </div>
-
-  <div class="card">
-    <h3>Open Jobs</h3>
-    <p id="jobCount">0</p>
-  </div>
-
-  <div class="card">
-    <h3>Find Employees</h3>
-    <input type="text" placeholder="Search by name..."><br><br>
-    <input type="text" placeholder="Search by language...">
-  </div>
-
-  <script src="dashboard.js"></script>
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>

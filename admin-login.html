@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <a href="index.html" class="home-btn">🏠 Home</a>
+    <h2>Admin Panel</h2>
+    <p>Enter password to access the employee management system</p>
+
+    <form onsubmit="return loginAdmin()">
+      <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+      <button type="submit">Access Admin Panel</button>
+      <p id="errorMsg" class="error"></p>
+    </form>
+  </div>
+  <script src="admin-login.js"></script>
+</body>
+</html>
+
+
+
+

@@ -7,25 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="index.html" class="home-btn">🏠 Home</a>
-  
-  <div class="card">
-    <div class="icon">👤</div>
+  <div class="form-container">
+    <a href="index.html" class="home-btn">🏠 Home</a>
     <h2>Employee Portal</h2>
     <p>Access your profile and job opportunities.</p>
 
-    <form>
-      <label>Email</label>
-      <input type="email" placeholder="Enter your email" required>
-
-      <label>Password</label>
-      <input type="password" placeholder="Enter your password" required>
-
-      <a href="#">Forgot Password?</a>
+    <form onsubmit="return loginEmployee()">
+      <input type="email" id="employeeEmail" placeholder="Enter your email" required>
+      <input type="password" id="employeePassword" placeholder="Enter your password" required>
       <button type="submit">Login</button>
-      <p>Don’t have an account? <a href="#">Sign Up</a></p>
     </form>
   </div>
+  <script src="employee-login.js"></script>
+</body>
+</html>
 
   <script src="script.js"></script>
 </body>
